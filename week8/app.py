@@ -16,7 +16,7 @@ if st.button("Analyze Sentiment"):
             try:
                 # Send request to FastAPI
                 response = requests.post(
-                    "http://localhost:8000/predict", 
+                    "http://localhost:8001/predict",
                     params={"review": review_text}
                 )
                 data = response.json()
